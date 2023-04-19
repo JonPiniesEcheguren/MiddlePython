@@ -19,3 +19,8 @@ env/
 # Archivos de configuración locales
 .env
 .venv
+
+#Mac
+.DS_Store
+menu/.DS_Store
+
