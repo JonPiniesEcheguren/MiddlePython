@@ -15,7 +15,11 @@ from menu import Basico3
 from menu import Avanzado1
 from menu import Avanzado2
 from menu import Avanzado3
-
+from menu import Lista1
+from menu import Lista2
+from menu import Lista3
+from menu import Lista4
+from menu import Lista5
 
 
 while True:
@@ -55,13 +59,52 @@ while True:
 
         print("0-Salir")
 
+        opcion = input("Seleccione una opción:")
+
+        if opcion == "1":
+            Basico1.principal()
+        elif opcion == "2":
+            Basico2.principal()
+        elif opcion == "3":
+            Basico3.principal() 
+        elif opcion == "4":
+            Avanzado1.principal() 
+        elif opcion == "5":
+            Avanzado2.principal()
+        elif opcion == "6":
+            Avanzado3.principal()
+
     elif opcion == "2":
 
         print("Menu Ejercicios con compresión de listas")
+        print("1-Primer ejercicio con compresion de listas")
+        print("2-Primer ejercicio con compresion de listas")
+        print("3-Primer ejercicio con compresion de listas")
+        print("4-Primer ejercicio con compresion de listas")
+        print("5-Primer ejercicio con compresion de listas")
 
         print("0-Salir")
 
-    if opcion == "3":
+        opcion = input("Seleccione una opción:")
+
+        if opcion == "1":
+            Lista1.principal()
+        elif opcion == "2":
+            Lista2.principal()
+        elif opcion == "3":
+            Lista3.principal() 
+        elif opcion == "4":
+            Lista4.principal() 
+        elif opcion == "5":
+            Lista5.principal() 
+
+        elif opcion == "0":
+            print("Un placer atenderle. Chao!")
+            break
+            
+        continuar=input("Presione enter para continuar...")
+
+    elif opcion == "3":
 
         print("Menu Ejercicios con JSON")
 
