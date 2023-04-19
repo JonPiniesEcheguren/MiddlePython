@@ -9,37 +9,12 @@ from menu import Clases4
 from menu import Json1
 from menu import Json2
 from menu import Json3
-from menu import Ejercicio1
-from menu import Ejercicio2
-from menu import Ejercicio3
-from menu import Ejercicio4
-from menu import Ejercicio5
-from menu import ejercicio6
-from menu import ejercicio7
-from menu import ejercicio8
-from menu import ejercicio9
-from menu import ejercicio10
-from menu import ejercicio11
-from menu import ej1LetraDNI
-from menu import ej2Salario
-from menu import ej3RutaAvion
-from menu import ej4AreaPerimetro
-from menu import ej5MayorMenor
-from menu import ej6CelAFah
-from menu import ej7ParImpar
-from menu import ej8BisiestoONo
-from menu import ej9Palíndromo
-from menu import ej10Ordenar
-from menu import ej11Factorial
-from menu import ej12Primo
-from menu import ej13Cubo
-from menu import ej14Suma
-from menu import ej15DeterminaNum
-from menu import ej16XBar
-from menu import ej17Aleatorio
-from menu import ej18Anagrama
-from menu import ej19Duplicados
-from menu import ej20Capicua
+from menu import Basico1
+from menu import Basico2
+from menu import Basico3
+from menu import Avanzado1
+from menu import Avanzado2
+from menu import Avanzado3
 
 
 
@@ -59,8 +34,8 @@ while True:
     print("Bienvenidos")
     print("Menu principal")
 
-    #print("1-Ejercicios con colecciones")
-    #print("2-Ejercicios con compresión de listas")
+    print("1-Ejercicios con colecciones")
+    print("2-Ejercicios con compresión de listas")
     print("3-Ejercicios con JSON")
     print("4-Ejercicios con clases")
 
@@ -68,17 +43,23 @@ while True:
 
     opcion = input("Seleccione una opción:")
 
-    #if opcion == "1":
+    if opcion == "1":
 
-        #print("Menu Ejercicios con colecciones")
+        print("Menu Ejercicios con colecciones")
+        print("1-Primer ejercicio con colecciones")
+        print("2-Segundo ejercicio con colecciones")
+        print("3-Tercer ejercicio con colecciones")
+        print("4-Cuarto ejercicio con colecciones")
+        print("5-Quinto ejercicio con colecciones")
+        print("6-Sexto ejercicio con colecciones")
 
-        #print("0-Salir")
+        print("0-Salir")
 
-    #elif opcion == "2":
+    elif opcion == "2":
 
-        #print("Menu Ejercicios con compresión de listas")
+        print("Menu Ejercicios con compresión de listas")
 
-        #print("0-Salir")
+        print("0-Salir")
 
     if opcion == "3":
 
