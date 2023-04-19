@@ -2,13 +2,46 @@ import os
 import sys
 #from Varios import principal
 
-from EjerciciosConClases import Clases1
-from EjerciciosConClases import Clases2
-from EjerciciosConClases import Clases3
-from EjerciciosConClases import Clases4
-from EjerciciosConJson import Json1
-from EjerciciosConJson import Json2
-from EjerciciosConJson import Json3
+from menu import Clases1
+from menu import Clases2
+from menu import Clases3
+from menu import Clases4
+from menu import Json1
+from menu import Json2
+from menu import Json3
+from menu import Ejercicio1
+from menu import Ejercicio2
+from menu import Ejercicio3
+from menu import Ejercicio4
+from menu import Ejercicio5
+from menu import ejercicio6
+from menu import ejercicio7
+from menu import ejercicio8
+from menu import ejercicio9
+from menu import ejercicio10
+from menu import ejercicio11
+from menu import ej1LetraDNI
+from menu import ej2Salario
+from menu import ej3RutaAvion
+from menu import ej4AreaPerimetro
+from menu import ej5MayorMenor
+from menu import ej6CelAFah
+from menu import ej7ParImpar
+from menu import ej8BisiestoONo
+from menu import ej9Palíndromo
+from menu import ej10Ordenar
+from menu import ej11Factorial
+from menu import ej12Primo
+from menu import ej13Cubo
+from menu import ej14Suma
+from menu import ej15DeterminaNum
+from menu import ej16XBar
+from menu import ej17Aleatorio
+from menu import ej18Anagrama
+from menu import ej19Duplicados
+from menu import ej20Capicua
+
+
 
 while True:
     if sys.platform.startswith("linux"):
