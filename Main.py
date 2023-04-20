@@ -2,7 +2,15 @@ import os
 import sys
 #from Varios import principal
 
-from menu import *
+from menu import ej33ListasCompehension as ej33 
+from menu import Clases1 as cl1 
+from menu import Clases2 as cl2 
+from menu import Clases3 as cl3 
+from menu import Clases4 as cl4
+from menu import Json1 as j1
+from menu import Json2 as j2
+from menu import Json3 as j3
+from menu import ej32listas as ej32
 
 
 
@@ -73,17 +81,17 @@ while True:
         opcion = input("Seleccione una opción:")
 
         if opcion == "1":
-            ej33ListasCompehension.Palabra2()
+            ej33.Palabra2()
         elif opcion == "2":
-            ej33ListasCompehension.Cuadrado2()
+            ej33.Cuadrado2()
         elif opcion == "3":
-            ej33ListasCompehension.llamaEdad2() 
+            ej33.llamaEdad2() 
         elif opcion == "4":
-            ej33ListasCompehension.listaNum2() 
+            ej33.listaNum2() 
         elif opcion == "5":
-            ej33ListasCompehension.ContarPal2() 
+            ej33.ContarPal2() 
         elif opcion == "6":
-            ej33ListasCompehension.Ciudad() 
+            ej33.Ciudad() 
 
         elif opcion == "0":
             print("Un placer atenderle. Chao!")
