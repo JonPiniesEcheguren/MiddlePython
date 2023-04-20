@@ -62,26 +62,29 @@ while True:
     elif opcion == "2":
 
         print("Menu Ejercicios con compresión de listas")
-        print("1-Primer ejercicio con compresion de listas")
-        print("2-Primer ejercicio con compresion de listas")
-        print("3-Primer ejercicio con compresion de listas")
-        print("4-Primer ejercicio con compresion de listas")
-        print("5-Primer ejercicio con compresion de listas")
+        print("1-Primer ejercicio básico con compresion de listas")
+        print("2-Segundo ejercicio básico con compresion de listas")
+        print("3-Tercer ejercicio básico con compresion de listas")
+        print("4-Primer ejercicio  avanzado con compresion de listas")
+        print("5-Segundo ejercicio avanzado con compresion de listas")
+        print("6-Tercer ejercicio avanzado con compresion de listas")
 
         print("0-Salir")
 
         opcion = input("Seleccione una opción:")
 
         if opcion == "1":
-            Lista1.principal()
+            ej33ListasCompehension.Palabra2()
         elif opcion == "2":
-            Lista2.principal()
+            ej33ListasCompehension.Cuadrado2()
         elif opcion == "3":
-            Lista3.principal() 
+            ej33ListasCompehension.llamaEdad2() 
         elif opcion == "4":
-            Lista4.principal() 
+            ej33ListasCompehension.listaNum2() 
         elif opcion == "5":
-            Lista5.principal() 
+            ej33ListasCompehension.ContarPal2() 
+        elif opcion == "6":
+            ej33ListasCompehension.Ciudad() 
 
         elif opcion == "0":
             print("Un placer atenderle. Chao!")
