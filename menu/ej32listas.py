@@ -22,58 +22,86 @@ asistencias = {"Ana": (1, 2, 3, 5, 6), "Luis": (2, 3, 4, 6, 7)}
 #! Se pide:
 
 #! 1. Calcular la cantidad total de sesiones a las que asistieron Ana y Luis en conjunto.
-print(colored("*---------------------------------------------------*", "red"))
-for key, value in asistencias.items():
-    key
-    valueLeng = len(value)
-    print(colored(f"{key} Asistió a: {valueLeng} sesiones", "red" ))
+def cantSesiones():
+    print(colored("*---------------------------------------------------*", "red"))
+    for key, value in asistencias.items():
+        key
+        valueLeng = len(value)
+        print(colored(f"{key} Asistió a: {valueLeng} sesiones", "red" ))
 
-total = asistencias["Ana"] + asistencias["Luis"] 
-print(colored(f"Ana y Luis Asistieron a: {len(total)} sesiones", "red" ))
-print(colored("*---------------------------------------------------*", "red"))
+    total = asistencias["Ana"] + asistencias["Luis"] 
+    print(colored(f"Ana y Luis Asistieron a: {len(total)} sesiones", "red" ))
+    print(colored("*---------------------------------------------------*", "red"))
+
+if __name__ == "__main__":
+    cantSesiones()
 
 #! 2. Mostrar las sesiones a las que asistieron ambos alumnos.
-ana = asistencias.get("Ana", 0)
-luis = asistencias.get("Luis", 0)
-numSesionesAmbos= []
-#todo: op1:
-for sesion in ana:
-    if sesion  in luis:
-        numSesionesAmbos.append(sesion)
-
+def MostSEsiones():
+    ana = asistencias.get("Ana", 0)
+    luis = asistencias.get("Luis", 0)
+    numSesionesAmbos= []
+    #todo: op1:
+    for sesion in ana:
+        if sesion  in luis:
+            numSesionesAmbos.append(sesion)
+    print(colored(f"Ana y Luis Asistieron a estas sesiones: {numSesionesAmbos}", "blue" ))
+    print(colored("*---------------------------------------------------*", "blue"))
+if __name__ == "__main__":
+    MostSEsiones()
 #todo: op2:
 # #* List Comprehension 
 # numSesionesAmbos = [sesion for sesion in ana if sesion in luis]
-
-print(colored(f"Ana y Luis Asistieron a estas sesiones: {numSesionesAmbos}", "blue" ))
-print(colored("*---------------------------------------------------*", "blue"))
-
 #! 3. Mostrar las sesiones a las que asistió uno de los dos alumnos, pero no a las que asistieron ambos.
-numSesionAna= []
-numSesionLuis= []
+def mostrarSesionesNoAmbos():
+    ana = asistencias.get("Ana", 0)
+    luis = asistencias.get("Luis", 0)
+    numSesionAna = []
+    numSesionLuis = []
+    #todo: op1:
+    for sesion in ana:
+        if sesion not in luis:
+            numSesionAna.append(sesion)
+    for sesion in luis:
+        if sesion not in ana:
+            numSesionLuis.append(sesion)
+    SesionesDeCadaUno ={"Ana":numSesionAna, "Luis":numSesionLuis} 
+    print(colored(f"Las sesiones a las que asistó cada uno por separado: {SesionesDeCadaUno}", "yellow" ))
+    print(colored("*---------------------------------------------------*", "yellow"))
 
-#todo: op1:
-for sesion in ana:
-    if sesion not in luis:
-        numSesionAna.append(sesion)
-for sesion in luis:
-    if sesion not in ana:
-        numSesionLuis.append(sesion)
+if __name__ == "__main__":
+    mostrarSesionesNoAmbos()
+
+
 
 #todo: op2:
 # #* List Comprehension 
 # numSesionAna = [sesion for sesion  in ana if sesion not in luis]
 # numSesionLuis = [sesion for sesion  in luis if sesion not in ana]
-
-SesionesDeCadaUno ={"Ana":numSesionAna, "Luis":numSesionLuis} 
-print(colored(f"Las sesiones a las que asistó cada uno por separado: {SesionesDeCadaUno}", "yellow" ))
-print(colored("*---------------------------------------------------*", "yellow"))
-
 #! 4. Mostrar las sesiones a las que asistió Ana pero no Luis.
-print(colored(f"Luis asistió a estas sesiones: {numSesionLuis}", "green" ))
-print(colored("*---------------------------------------------------*", "green"))
+def mostrarSesionesAna():
+    ana = asistencias.get("Ana", 0)
+    luis = asistencias.get("Luis", 0)
+    numSesionAna = []
+    #todo: op1:
+    for sesion in ana:
+        if sesion not in luis:
+            numSesionAna.append(sesion)
+    print(colored(f"Ana asistió a estas sesiones: {numSesionAna}", "green" ))
+    print(colored("*---------------------------------------------------*", "green"))
+if __name__ == "__main__":
+    mostrarSesionesAna()
 
 #! 5. Mostrar las sesiones a las que asistió Luis pero no Ana.
-print(colored(f"Ana asistió a estas sesiones: {numSesionAna}", "cyan"))
-print(colored("*---------------------------------------------------*", "cyan"))
-
+def mostrarSesionesLuis():
+    ana = asistencias.get("Ana", 0)
+    luis = asistencias.get("Luis", 0)
+    numSesionLuis = []
+    #todo: op1:
+    for sesion in luis:
+        if sesion not in ana:
+            numSesionLuis.append(sesion)
+    print(colored(f"Luis asistió a estas sesiones: {numSesionLuis}", "cyan"))
+    print(colored("*---------------------------------------------------*", "cyan"))
+if __name__ == "__main__":
+    mostrarSesionesLuis()

@@ -2,9 +2,8 @@ import os
 import sys
 #from Varios import principal
 
-from menu.middlePython import *
-from menu.startPython import *
-from menu.nextStepsPython import *
+from menu import *
+
 
 
 while True:
