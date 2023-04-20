@@ -110,11 +110,11 @@ while True:
         opcion = input("Seleccione una opción:")
 
         if opcion == "1":
-            Json1.principal()
+            j1.principal()
         elif opcion == "2":
-            Json2.principal()
+            j2.principal()
         elif opcion == "3":
-            Json3.principal() 
+            j3.principal() 
         
         elif opcion == "0":
             print("Un placer atenderle. Chao!")
@@ -136,13 +136,13 @@ while True:
         opcion = input("Seleccione una opción:")
     
         if opcion == "1":
-            Clases1.principal()
+            cl1.principal()
         elif opcion == "2":
-            Clases2.principal()
+            cl2.principal()
         elif opcion == "3":
-            Clases3.principal()
+            cl3.principal()
         elif opcion == "4":
-            Clases4.principal() 
+            cl4.principal() 
         
         elif opcion == "0":
             print("Un placer atenderle. Chao!")
