@@ -10,7 +10,7 @@ from menu import Clases4 as cl4
 from menu import Json1 as j1
 from menu import Json2 as j2
 from menu import Json3 as j3
-from menu import ej32listas as ej32
+from menu import ej32 as ej32
 
 
 
@@ -54,18 +54,16 @@ while True:
         opcion = input("Seleccione una opción:")
 
         if opcion == "1":
-            Basico1.principal()
+            ej32.cantSesiones()
         elif opcion == "2":
-            Basico2.principal()
+            ej32.MostSEsiones()
         elif opcion == "3":
-            Basico3.principal() 
+            ej32.mostrarSesionesNoAmbos() 
         elif opcion == "4":
-            Avanzado1.principal() 
+            ej32.mostrarSesionesAna()
         elif opcion == "5":
-            Avanzado2.principal()
-        elif opcion == "6":
-            Avanzado3.principal()
-
+            ej32.mostrarSesionesLuis()
+        
     elif opcion == "2":
 
         print("Menu Ejercicios con compresión de listas")
