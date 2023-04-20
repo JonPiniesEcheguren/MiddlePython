@@ -2,24 +2,9 @@ import os
 import sys
 #from Varios import principal
 
-from menu import Clases1
-from menu import Clases2
-from menu import Clases3
-from menu import Clases4
-from menu import Json1
-from menu import Json2
-from menu import Json3
-from menu import Basico1
-from menu import Basico2
-from menu import Basico3
-from menu import Avanzado1
-from menu import Avanzado2
-from menu import Avanzado3
-from menu import Lista1
-from menu import Lista2
-from menu import Lista3
-from menu import Lista4
-from menu import Lista5
+from menu.middlePython import *
+from menu.startPython import *
+from menu.nextStepsPython import *
 
 
 while True:
