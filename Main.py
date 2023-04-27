@@ -47,7 +47,6 @@ while True:
         print("3-Tercer ejercicio con colecciones")
         print("4-Cuarto ejercicio con colecciones")
         print("5-Quinto ejercicio con colecciones")
-        print("6-Sexto ejercicio con colecciones")
 
         print("0-Salir")
 
