@@ -20,7 +20,7 @@
 
     - `python3 -m venv env`
 
-    - `source env\bin\activate`
+    - `source env/bin/activate`
 
 - Instalar las librerias
   - `pip install -r requirements.txt`
